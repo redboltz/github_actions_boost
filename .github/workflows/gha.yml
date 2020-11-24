@@ -27,5 +27,5 @@ jobs:
       run: |
         mkdir build
         cd build
-        BOOST_ROOT=#BOOST_ROOT_1_72_0 cmake ..
+        BOOST_ROOT=$BOOST_ROOT_1_72_0 cmake ..
         
