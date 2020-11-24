@@ -27,6 +27,7 @@ jobs:
       env:
         BOOST_ROOT: ${BOOST_ROOT_1_72_0}
       run: |
+        export BOOST_ROOT=$BOOST_ROOT_1_72_0
         echo $BOOST_ROOT
         mkdir build
         cd build
