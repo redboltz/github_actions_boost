@@ -13,7 +13,7 @@ jobs:
   linux:
     runs-on: ubuntu-latest
     env:
-      BOOST_ROOT: $BOOST_ROOT_1_72_0
+      BOOST_ROOT: dummy
     steps:
     - name: Checkout
       uses: actions/checkout@v2
