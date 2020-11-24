@@ -18,5 +18,5 @@ jobs:
     - name: Print environment variables
       run: |
         echo $BOOST_ROOT
-        echo $BOOST_ROO_1_72_0
-        echo $BOOST_ROO_1_69_0
+        echo $BOOST_ROOT_1_72_0
+        echo $BOOST_ROOT_1_69_0
