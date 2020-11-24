@@ -22,6 +22,7 @@ jobs:
         echo $BOOST_ROOT
         echo $BOOST_ROOT_1_72_0
         echo $BOOST_ROOT_1_69_0
+        ls $BOOST_ROOT_1_72_0
     - name: cmake
       run: |
         mkdir build
