@@ -28,6 +28,7 @@ jobs:
         BOOST_ROOT: ${BOOST_ROOT_1_72_0}
       run: |
         export BOOST_ROOT=$BOOST_ROOT_1_72_0
+        export CXXFLAGS="-Werror -Wall -Wextra"
         echo $BOOST_ROOT
         mkdir build
         cd build
