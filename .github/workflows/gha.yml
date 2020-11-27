@@ -26,9 +26,10 @@ jobs:
     - name: cmake
       env:
         BOOST_ROOT: ${BOOST_ROOT_1_72_0}
+        CXXFLAGS: -Werror -Wall -Wextra
       run: |
         export BOOST_ROOT=$BOOST_ROOT_1_72_0
-        export CXXFLAGS="-Werror -Wall -Wextra"
+        export 
         echo $BOOST_ROOT
         mkdir build
         cd build
