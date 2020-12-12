@@ -27,7 +27,8 @@ jobs:
       run: |
         cmake --build
         ./hello
-linux:
+
+  linux:
     runs-on: ubuntu-latest
     env:
       BOOST_ROOT: dummy
