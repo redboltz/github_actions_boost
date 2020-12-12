@@ -12,7 +12,7 @@ foreach (source_file ${exec_programs})
         ${source_file_we}
         ${source_file}
     )
-    TARGET_COMPILE_DEFINITIONS (${source_file_we} TARGET_COMPILE_DEFINITIONS  BOOST_LOG_DYN_LINK)
+    TARGET_COMPILE_DEFINITIONS (${source_file_we} PUBLIC BOOST_LOG_DYN_LINK)
     TARGET_LINK_LIBRARIES (
         ${source_file_we} Boost::log
     )    
