@@ -25,7 +25,8 @@ jobs:
         cmake -DCMAKE_CXX_COMPILER=clang++ ..
     - name: Compile
       run: |
-        cmake --build
+        cd build
+        cmake --build .
         ./hello
 
   linux:
