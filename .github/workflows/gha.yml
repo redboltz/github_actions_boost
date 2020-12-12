@@ -10,7 +10,24 @@ on:
     - '*'
 
 jobs:
-  linux:
+  macos:
+    runs-on: macos-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Install Dependencies
+      run: |
+        brew install boost
+    - name: Configure
+      run: |
+        mkdir build
+        cd build
+        cmake -DCMAKE_CXX_COMPILER=clang++ ..
+    - name: Compile
+      run: |
+        cmake --build
+        ./hello
+linux:
     runs-on: ubuntu-latest
     env:
       BOOST_ROOT: dummy
